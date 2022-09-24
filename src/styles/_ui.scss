@@ -1,0 +1,35 @@
+h1 {
+  @include stretch(font-size, 22, 52);
+  font-weight: 700;
+  line-height: 1.34;
+}
+
+h2 {
+  @include stretch(font-size, 16, 26);
+  font-weight: 600;
+  line-height: 1.58;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo-icon {
+  @include stretch(width, 16, 32);
+  @include stretch(height, 27, 54);
+}
+
+.square {
+  padding: 0 0 100%;
+}
+
+.full-absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
